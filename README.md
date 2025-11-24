@@ -2,21 +2,25 @@
 
 Predicting patient no-shows to optimize appointment scheduling and interventions using machine learning.
 
+
+
 **Project Overview**
 
 This project predicts the likelihood of patients missing their scheduled appointments using historical appointment data, patient demographics, and weather information. The goal is to enable healthcare providers to reduce missed appointments through targeted reminders and optimized scheduling.
 
-Key features:
 
-Predicts No-Show Risk Probability for each appointment.
 
-Classifies patients into Low, Medium, High, or Critical risk categories.
+**Key features:**
 
-Recommends intervention strategies (SMS, phone reminders, follow-ups) based on risk factors.
+1.Predicts No-Show Risk Probability for each appointment.
 
-Identifies optimal scheduling characteristics for high attendance.
+2.Classifies patients into Low, Medium, High, or Critical risk categories.
 
-Generates a summary dashboard for decision support.
+3.Recommends intervention strategies (SMS, phone reminders, follow-ups) based on risk factors.
+
+4.Identifies optimal scheduling characteristics for high attendance.
+
+5.Generates a summary dashboard for decision support.
 
 
 
@@ -30,11 +34,11 @@ Weather Data: DailyClimateTrain.csv & DailyClimateTest.csv (temperature, humidit
 
 **Methodology**
 
-Data Loading & Exploration: Load datasets, check distributions, visualize No-Show patterns.
+1.Data Loading & Exploration: Load datasets, check distributions, visualize No-Show patterns.
 
-Data Preprocessing: Clean column names, handle missing values, clip ages, convert target to numeric.
+2.Data Preprocessing: Clean column names, handle missing values, clip ages, convert target to numeric.
 
-**Feature Engineering:**
+3.Feature Engineering:
 
 Temporal features (days until appointment, day of week, month, season, weekend indicator)
 
@@ -44,46 +48,46 @@ Weather merge for appointment day
 
 Appointment type and age group
 
-Feature Encoding: Label encoding for categorical features, encoding gender and neighborhood.
+4.Feature Encoding: Label encoding for categorical features, encoding gender and neighborhood.
 
-**Modeling:**
+5.Modeling:
 
-Random Forest
+-Random Forest
 
-Gradient Boosting
+-Gradient Boosting
 
-Logistic Regression
+-Logistic Regression
 
-Evaluation Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC, feature importance.
+6.Evaluation Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC, feature importance.
 
-Risk Stratification: Assign Low, Medium, High, Critical risk categories.
+7.Risk Stratification: Assign Low, Medium, High, Critical risk categories.
 
-Intervention Recommendations: SMS reminders, phone calls, follow-ups, special care for high-risk patients.
+8.Intervention Recommendations: SMS reminders, phone calls, follow-ups, special care for high-risk patients.
 
-Scheduling Optimization: Identify best days, months, and scheduling windows for maximum attendance.
+9.Scheduling Optimization: Identify best days, months, and scheduling windows for maximum attendance.
 
-Dashboard & Summary: Save predictions with risk probabilities and recommended interventions.
+10.Dashboard & Summary: Save predictions with risk probabilities and recommended interventions.
 
 
 
 
 **Usage**
 
-Open Appointment_NoShow_Predictor.py in Jupyter/Colab.
+1.Open Appointment_NoShow_Predictor.py in Jupyter/Colab.
 
-Run cells sequentially.
+2.Run cells sequentially.
 
-Output includes:
+3.Output includes:
 
-Feature importance plots
+-Feature importance plots
 
-ROC curves
+-ROC curves
 
-Risk stratification visualizations
+-Risk stratification visualizations
 
-Top 10 high-risk appointments for intervention
+-Top 10 high-risk appointments for intervention
 
-Final summary saved as Final_NoShow_Summary.csv.
+4.Final summary saved as Final_NoShow_Summary.csv.
 
 
 <img width="1173" height="320" alt="image" src="https://github.com/user-attachments/assets/0d4af0f1-b3fa-4258-a87a-1f2dc847c709" />
@@ -94,11 +98,11 @@ Final summary saved as Final_NoShow_Summary.csv.
 
 **Key Insights**
 
-Random Forest and Gradient Boosting performed best for this dataset.
+-Random Forest and Gradient Boosting performed best for this dataset.
 
-Age, days until appointment, comorbidity index, and prior SMS reminders are significant predictors.
+-Age, days until appointment, comorbidity index, and prior SMS reminders are significant predictors.
 
-Targeted interventions can potentially reduce no-show rates significantly.
+-Targeted interventions can potentially reduce no-show rates significantly.
 
 
 
