@@ -18,11 +18,15 @@ Identifies optimal scheduling characteristics for high attendance.
 
 Generates a summary dashboard for decision support.
 
+
+
 **Dataset**
 
 Appointments Data: KaggleV2-May-2016.csv (patient appointments, demographics, no-show status)
 
 Weather Data: DailyClimateTrain.csv & DailyClimateTest.csv (temperature, humidity, wind, pressure)
+
+
 
 **Methodology**
 
@@ -30,7 +34,7 @@ Data Loading & Exploration: Load datasets, check distributions, visualize No-Sho
 
 Data Preprocessing: Clean column names, handle missing values, clip ages, convert target to numeric.
 
-Feature Engineering:
+**Feature Engineering:**
 
 Temporal features (days until appointment, day of week, month, season, weekend indicator)
 
@@ -42,7 +46,7 @@ Appointment type and age group
 
 Feature Encoding: Label encoding for categorical features, encoding gender and neighborhood.
 
-Modeling:
+**Modeling:**
 
 Random Forest
 
@@ -59,3 +63,43 @@ Intervention Recommendations: SMS reminders, phone calls, follow-ups, special ca
 Scheduling Optimization: Identify best days, months, and scheduling windows for maximum attendance.
 
 Dashboard & Summary: Save predictions with risk probabilities and recommended interventions.
+
+
+
+
+**Usage**
+
+Open Appointment_NoShow_Predictor.py in Jupyter/Colab.
+
+Run cells sequentially.
+
+Output includes:
+
+Feature importance plots
+
+ROC curves
+
+Risk stratification visualizations
+
+Top 10 high-risk appointments for intervention
+
+Final summary saved as Final_NoShow_Summary.csv.
+
+
+<img width="1173" height="320" alt="image" src="https://github.com/user-attachments/assets/0d4af0f1-b3fa-4258-a87a-1f2dc847c709" />
+
+
+
+
+
+**Key Insights**
+
+Random Forest and Gradient Boosting performed best for this dataset.
+
+Age, days until appointment, comorbidity index, and prior SMS reminders are significant predictors.
+
+Targeted interventions can potentially reduce no-show rates significantly.
+
+
+
+
