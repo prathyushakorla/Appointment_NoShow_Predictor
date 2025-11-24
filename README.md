@@ -80,10 +80,14 @@ Appointment type and age group
 3.Output includes:
 
 -Feature importance plots
+<img width="951" height="582" alt="image" src="https://github.com/user-attachments/assets/8ba98b82-04a7-4263-9975-60202c431542" />
+
 
 -ROC curves
 
 -Risk stratification visualizations
+<img width="719" height="442" alt="image" src="https://github.com/user-attachments/assets/8e8a3f17-b425-4df2-8aec-4eefaa9a6835" />
+
 
 -Top 10 high-risk appointments for intervention
 
@@ -91,6 +95,8 @@ Appointment type and age group
 
 
 <img width="1173" height="320" alt="image" src="https://github.com/user-attachments/assets/0d4af0f1-b3fa-4258-a87a-1f2dc847c709" />
+
+<img width="1282" height="615" alt="image" src="https://github.com/user-attachments/assets/22ead279-cdde-4b21-8a0c-2b7d1b34fd87" />
 
 
 
